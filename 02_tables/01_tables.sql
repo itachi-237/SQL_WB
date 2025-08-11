@@ -16,6 +16,7 @@ DROP TABLE IF EXISTS kunde;
 -- Tabelle anlegen
 CREATE TABLE IF NOT EXISTS kunde 
 (
+    kunden_id INT AUTO_INCREMENT PRIMARY KEY,
     kundenname VARCHAR(45),
     kundenalter TINYINT
 );
@@ -27,9 +28,12 @@ SHOW TABLES;
 DESCRIBE kunde;
 
 -- Datensätze / Zeilen
-INSERT INTO kunde(kundenname, kundenalter) VALUES ("Meier",68); 
-INSERT INTO kunde(kundenname, kundenalter) VALUES ("Gadaffi",89); 
-INSERT INTO kunde(kundenname, kundenalter) VALUES ("Jong-Un",38);
+INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Meier",68); 
+INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Gadaffi",89); 
+INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Putin",59);
+INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Putin",64);
+INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Jong-Un",38);
+
 
 -- Tabellendaten (Inhalte) anzeigen
 SELECT * FROM kunde;
