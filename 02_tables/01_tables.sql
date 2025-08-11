@@ -33,6 +33,7 @@ INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Gadaffi",
 INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Putin",59);
 INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Putin",64);
 INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Jong-Un",38);
+INSERT INTO kunde(kundenname, kundenalter) VALUES ("Putin",64);
 
 
 -- Tabellendaten (Inhalte) anzeigen
