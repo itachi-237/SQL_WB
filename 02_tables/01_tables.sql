@@ -25,3 +25,11 @@ SHOW TABLES;
 
 -- Struktur anzeigen
 DESCRIBE kunde;
+
+-- Datensätze / Zeilen
+INSERT INTO kunde(kundenname, kundenalter) VALUES ("Meier",68); 
+INSERT INTO kunde(kundenname, kundenalter) VALUES ("Gadaffi",89); 
+INSERT INTO kunde(kundenname, kundenalter) VALUES ("Jong-Un",38);
+
+-- Tabellendaten (Inhalte) anzeigen
+SELECT * FROM kunde;
