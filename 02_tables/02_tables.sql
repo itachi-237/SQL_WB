@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS kunde
     kunden_id INT AUTO_INCREMENT PRIMARY KEY,
     kundenname VARCHAR(45),
     kundenalter TINYINT,
-    kunden_email UNIQUE VARCHAR(100)
+    kunden_mail VARCHAR(100) UNIQUE
 );
 
 -- Tabelle anzeigen
@@ -29,12 +29,12 @@ SHOW TABLES;
 DESCRIBE kunde;
 
 -- Datensätze / Zeilen
-INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Meier",68); 
-INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Gadaffi",89); 
-INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Putin",59);
-INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Putin",64);
-INSERT INTO kunde(kunden_id, kundenname, kundenalter) VALUES (DEFAULT,"Jong-Un",38);
-INSERT INTO kunde(kundenname, kundenalter) VALUES ("Putin",64);
+INSERT INTO kunde(kunden_id, kundenname, kundenalter,kunden_mail) VALUES (DEFAULT,"Meier",68,"meier@web.de"); 
+INSERT INTO kunde(kunden_id, kundenname, kundenalter,kunden_mail) VALUES (DEFAULT,"Gadaffi",89,"gadaffi@web.de"); 
+INSERT INTO kunde(kunden_id, kundenname, kundenalter,kunden_mail) VALUES (DEFAULT,"Putin",59,"putin@web.de");
+INSERT INTO kunde(kunden_id, kundenname, kundenalter,kunden_mail) VALUES (DEFAULT,"Putin",64,"putin2@web.de");
+INSERT INTO kunde(kunden_id, kundenname, kundenalter,kunden_mail) VALUES (DEFAULT,"Jong-Un",38,"kim@web.de");
+INSERT INTO kunde(kundenname, kundenalter,kunden_mail) VALUES ("Putin",64,"putin3@web.de");
 
 
 -- Tabellendaten (Inhalte) anzeigen
