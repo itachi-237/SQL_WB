@@ -1,6 +1,8 @@
+\! cls
 -- SELECT
 
-\! cls
+SHOW DATABASES;
+USE boo;
 
 DROP TABLE IF EXISTS boo.kontakte;
 
