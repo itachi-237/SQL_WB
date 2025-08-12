@@ -1,5 +1,5 @@
 \! cls
--- SELECT
+-- 01 SELECT
 
 SHOW DATABASES;
 USE boo;
