@@ -30,12 +30,12 @@ SHOW TABLES;
 DESCRIBE kunde;
 
 -- Datensätze / Zeilen
-INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Meier",68,"meier@web.de", 'hallo2'); 
-INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Gadaffi",89,"gadaffi@web.de", 'haus21'); 
-INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Putin",59,"putin@web.de", 'katze123');
-INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Putin",64,"putin2@web.de", 'hund3723');
-INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Jong-Un",38,"kim@web.de", 'ilikechinesegirls');
-INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Merzscherz",64,"ichbineinknecht@web.de", 'taurusletsgoooo');
+INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Meier",68, "meier@web.de", SHA2('hallo2',256)); 
+INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Gadaffi",89,"gadaffi@web.de", SHA2('haus21',256)); 
+INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Putin",59,"putin@web.de", SHA2('katze123',256));
+INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Putin",64,"putin2@web.de", SHA2('hund3723',256));
+INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Jong-Un",38,"kim@web.de", SHA2('ilikechinesegirls',256));
+INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Merzscherz",64,"ichbineinknecht@web.de", SHA2('taurusletsgoooo',256));
 INSERT INTO kunde(kunden_id, kundenname, kundenalter, kunden_mail, kunden_pw) VALUES (DEFAULT,"Bärbock",NULL,NULL,NULL);
 INSERT INTO kunde() VALUES();
 
