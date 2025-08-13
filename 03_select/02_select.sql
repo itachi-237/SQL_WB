@@ -2,11 +2,11 @@
 
 -- 02 SELECT
 
--- SELECT 
+-- nur bestimmten Teil anzeigen 
 --     kunden_id, wohnort, bundesland
 -- FROM languages.kontakte;
 
--- nur bestimmten Teil mit Bedingung anzeigen
+-- nur bestimmten Teil mit Bedingung anzeigen und anschließens sortieren
 SELECT
     kunden_id, kundenname AS Name, eMail, wohnort, bundesland
 FROM languages.kontakte 
