@@ -2,7 +2,7 @@
 -- 01 SELECT
 -- SHOW VARIABLES LIKE 'character_set%';
 SHOW VARIABLES LIKE 'collation%';
-
+DROP DATABASE IF EXISTS languages;
 CREATE DATABASE languages
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
