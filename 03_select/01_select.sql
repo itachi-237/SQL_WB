@@ -1,12 +1,15 @@
 \! cls
 -- 01 SELECT
+-- SHOW VARIABLES LIKE 'character_set%';
+SHOW VARIABLES LIKE 'collation%';
 
-SHOW DATABASES;
-USE boo;
+CREATE DATABASE languages
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
 
-DROP TABLE IF EXISTS boo.kontakte;
+DROP TABLE IF EXISTS languages.kontakte;
 
-CREATE TABLE IF NOT EXISTS boo.kontakte (
+CREATE TABLE IF NOT EXISTS languages.kontakte (
     kunden_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     kundenname VARCHAR(100),
     adresse VARCHAR(255),
@@ -17,9 +20,10 @@ CREATE TABLE IF NOT EXISTS boo.kontakte (
     wohnort VARCHAR(100)
 );
 
-DESCRIBE boo.kontakte;
+-- SHOW CREATE TABLE boo.kontakte;
+DESCRIBE languages.kontakte;
 
-INSERT INTO boo.kontakte (kunden_id, kundenname, adresse, telefonnummer, eMail, kundenalter, bundesland, wohnort)
+INSERT INTO languages.kontakte (kunden_id, kundenname, adresse, telefonnummer, eMail, kundenalter, bundesland, wohnort)
 VALUES
 (1, 'Sophia Müller', 'Musterstraße 1', '01234/56789', 'sophia.mueller@example.de', 25, 'Nordrhein-Westfalen', 'Köln'),
 (2, 'Noah Schmidt', 'Hauptstraße 2', '0221/123456', 'noah.schmidt@example.de', 30, 'Nordrhein-Westfalen', 'Düsseldorf'),
@@ -72,4 +76,4 @@ VALUES
 (49, 'Sabine Hoffmann', 'Rathausstraße 49', '0211/666666', 'sabine.hoffmann@example.de', 24, 'Nordrhein-Westfalen', 'Düsseldorf'),
 (50, 'Hans Schäfer', 'Schlossstraße 50', '089/777777', 'hans.schaefer@example.de', 33, 'Bayern', 'München');
 
-SELECT * FROM boo.kontakte;
+SELECT * FROM languages.kontakte;
