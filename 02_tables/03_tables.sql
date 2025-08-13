@@ -4,9 +4,10 @@
 SHOW DATABASES;
 
 -- Datenbank anlegen, falls noch nicht existent
+DROP DATABASE IF EXISTS boo;
 CREATE DATABASE IF NOT EXISTS boo;
 
--- Tabellen anzeigen
+-- Tabelle auswählen
 USE boo;
 
 -- Tabelle löschen, falls existent
